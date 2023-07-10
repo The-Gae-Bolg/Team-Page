@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../src/fonts/Montserrat.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PT Serif';
+  src: url('../../src/fonts/PTSerif.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../src/fonts/Poppins.ttf') format('truetype');
+}
+
+.text-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.text-job{
+  @apply font-normal leading-4 text-[10px] md:text-[12px] uppercase font-PTSerif;
+}
